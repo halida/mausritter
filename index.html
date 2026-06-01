@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mausritter: Crumb Quest</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <p class="eyebrow">A tiny sword-and-whiskers adventure</p>
+      <h1>Mausritter: Crumb Quest</h1>
+      <p>Guide a brave mouse into a human pantry, survive dangerous saves, and bring treasure home.</p>
+    </header>
+
+    <section class="panel mouse-card" aria-labelledby="mouse-heading">
+      <div>
+        <h2 id="mouse-heading">Your Mouse</h2>
+        <p id="mouse-summary">Roll a new mouse to begin.</p>
+      </div>
+      <button id="new-game" type="button">Roll a new mouse</button>
+    </section>
+
+    <section class="grid">
+      <aside class="panel stats" aria-label="Character stats">
+        <h2>Character</h2>
+        <dl>
+          <div><dt>Name</dt><dd id="stat-name">—</dd></div>
+          <div><dt>Background</dt><dd id="stat-background">—</dd></div>
+          <div><dt>STR</dt><dd id="stat-str">—</dd></div>
+          <div><dt>DEX</dt><dd id="stat-dex">—</dd></div>
+          <div><dt>WIL</dt><dd id="stat-wil">—</dd></div>
+          <div><dt>HP</dt><dd id="stat-hp">—</dd></div>
+          <div><dt>Pips</dt><dd id="stat-pips">—</dd></div>
+          <div><dt>Gear</dt><dd id="stat-gear">—</dd></div>
+        </dl>
+      </aside>
+
+      <section class="panel scene" aria-live="polite">
+        <div class="scene-topline">
+          <span id="chapter">Chapter 0</span>
+          <span id="danger">Safe burrow</span>
+        </div>
+        <h2 id="scene-title">Ready your whiskers</h2>
+        <p id="scene-text">Click “Roll a new mouse” to start a short solo adventure using Mausritter-style saves and combat.</p>
+        <div id="choices" class="choices"></div>
+      </section>
+    </section>
+
+    <section class="panel log-panel" aria-labelledby="log-heading">
+      <h2 id="log-heading">Dice & Consequences</h2>
+      <ol id="log" class="log"></ol>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
